@@ -51,11 +51,12 @@ const allPets = [
 
 //console.log(allPets);
 
+//Displays the pets in the browser
 const showPets = function (petArray) {
     pets.innerHTML = "";
     for (let pet of petArray) {
         let status = "ready to play!"
-        if (this.isTired >= 7) {
+        if (pet.isTired >= 7) {
             status = "sleeping";
         }
         const li = document.createElement("li");
